@@ -1,0 +1,1 @@
+@tailwind base;@tailwind components;@tailwind utilities;.gradient-hero{background:linear-gradient(180deg,#fff,#f6f8ff)}.card{@apply rounded-2xl shadow-sm border border-slate-200 bg-white}.container-xl{@apply max-w-7xl mx-auto px-6}

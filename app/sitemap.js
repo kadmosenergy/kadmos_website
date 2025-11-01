@@ -1,0 +1,1 @@
+export default async function sitemap(){const base=process.env.SITE_URL||"https://kadmos.example.com";return["","/solutions","/technology","/cases","/about","/contact"].map(p=>({url:base+p,lastModified:new Date().toISOString().split("T")[0],changeFrequency:"weekly",priority:p===""?1:0.7}))}
