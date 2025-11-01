@@ -22,7 +22,7 @@ export default function Page(){
     <section className="gradient-hero border-b border-slate-200">
       <div className="container-xl py-20 sm:py-28 flex flex-col items-center text-center gap-8">
         <Image src="/logo.png" alt="Kadmos Energy logo" width={140} height={140} priority />
-        <h1 className="text-4xl md:text-6xl font-semibold text-slate-900 max-w-4xl leading-tight">Scalable, passive‑safety reactors built from proven components</h1>
+        <h1 className="text-4xl md:text-6xl font-semibold text-slate-900 max-w-4xl leading-tight">Built on Proven Engineering, Designed for Passive Safety & Scalable for the Future</h1>
         <p className="text-slate-700 text-lg max-w-3xl">Kadmos Energy designs and engineers scalable nuclear reactors that rely on passive safety, natural circulation, and proven components. Our 'Home Depot' approach minimizes bespoke R&D and licensing risk by integrating off‑the‑shelf technologies into an integral, simplified plant—optimized for high availability and rapid deployment.</p>
         <div className="flex flex-col sm:flex-row gap-3"><Link href="/contact" className="px-5 py-3 rounded-xl bg-kadmos-blue text-white hover:opacity-90">Talk to engineering</Link><Link href="/technology" className="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white">How it works</Link></div>
       </div>

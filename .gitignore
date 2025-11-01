@@ -1,3 +1,1 @@
-# Create the .gitignore file (if it doesn't exist)
-# and add /node_modules to it
-echo "/node_modules" >> .gitignore
+/node_modules
