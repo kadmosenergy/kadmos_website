@@ -12,7 +12,7 @@ export default function Page(){
   return (<div>
     <div className="container-xl py-14">
       <h1 className="text-3xl md:text-4xl font-semibold text-slate-900">Solutions</h1>
-      <p className="text-slate-700 mt-4 max-w-3xl">We deliver modular, integral reactors sized from 50–500 MWth. Each unit is designed for natural‑circulation operation at set‑point, high availability (≥90%), and rapid site integration for data‑center and industrial customers.</p>
+      <p className="text-slate-700 mt-4 max-w-3xl">We deliver modular, integral reactors sized from 30–165 MW. Each unit is designed for natural‑circulation operation at set‑point, high availability (≥95%), and rapid site integration for data‑center and industrial customers.</p>
     </div>
     <Section>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
