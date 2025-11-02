@@ -6,7 +6,7 @@ const cards=[
   ["Underground water pool","The vessel sits in a below‑grade pool that provides long grace times for decay‑heat removal and reduces grading cost."],
   ["Standard PWR fuel","Use of commercial fuel lowers cost and supply risk while preserving licensing familiarity."],
   ["Set‑point booster pump","A small, non‑nuclear‑grade pump assists only near set‑point to avoid instabilities and enable load‑follow."],
-  ["Quick‑opening closure","Grayloc/Bandlock‑style clamp rings minimize outage duration for refueling and inspection."]
+  ["Quick‑opening closure","Bandlock‑style clamp rings minimize outage duration for refueling and inspection."]
 ];
 export default function Page(){
   return (<div>
@@ -19,5 +19,16 @@ export default function Page(){
         {cards.map(([t,b])=>(<div key={t} className="card p-6"><h3 className="font-semibold text-slate-900 mb-2">{t}</h3><p className="text-slate-700">{b}</p></div>))}
       </div>
     </Section>
+    <section className="container-xl my-12">
+      <div className="card p-4">
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-xl font-semibold text-slate-900">KADMOS Design — one‑pager</h3>
+          <a className="text-kadmos-blue underline" href="/one_page_design.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+        </div>
+        <a href="/one_page_design.pdf" target="_blank" rel="noreferrer" className="block">
+          <img src="/one_page_design.png" alt="Kadmos Design one‑pager" className="w-full h-auto rounded-xl border border-slate-200"/>
+        </a>
+      </div>
+    </section>
   </div>);
 }

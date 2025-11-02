@@ -1,1 +1,54 @@
-import Section from"@/components/Section";import Link from"next/link";export const metadata={title:"Case Studies — Kadmos Energy",description:"Examples of the engineering depth behind the Kadmos approach."};const cards=[["Fast access & maintenance","Clamp‑ring/breech‑lock closures with interlocks and reusable seals."],["Transient resilience","6‑group kinetics with temperature feedback under natural circulation."],["Decay‑heat pool sizing","Conservative pool‑volume sizing to meet temperature limits."]];export default function Page(){return(<div><div className="container-xl py-14"><h1 className="text-3xl md:text-4xl font-semibold text-slate-900">Case Studies</h1><p className="text-slate-700 mt-4 max-w-3xl">From closures to transients and passive heat removal, choices validated by analysis.</p></div><Section><div className="grid md:grid-cols-3 gap-6">{cards.map(([t,b])=>(<div key={t} className="card p-6 flex flex-col"><h3 className="font-semibold text-slate-900 mb-2">{t}</h3><p className="text-slate-700 flex-1">{b}</p><div className="mt-4"><Link className="text-kadmos-blue" href="/contact">Request the technical brief →</Link></div></div>))}</div></Section></div>)}
+import Section from "@/components/Section";
+import Link from "next/link";
+import Image from "next/image";
+
+export const metadata = {
+  title: "Case Studies — Kadmos Energy",
+  description: "Examples of the engineering depth behind the Kadmos approach."
+};
+
+const cards = [
+  ["Fast access & maintenance","Clamp-ring/breech-lock closures with interlocks and reusable seals."],
+  ["Transient resilience","6-group kinetics with temperature feedback under natural circulation."],
+  ["Decay-heat pool sizing","Conservative pool-volume sizing to meet temperature limits."]
+];
+
+export default function Page() {
+  return (
+    <div>
+      <div className="container-xl py-10 md:py-14">
+        <h1 className="text-3xl md:text-4xl font-semibold text-slate-900">Case Studies</h1>
+        <p className="text-slate-700 mt-3 max-w-3xl">
+          From closures to transients and passive heat removal, our design choices are validated by first-principles analysis.
+        </p>
+        {/* Header visual */}
+        <div className="relative mt-6 rounded-2xl overflow-hidden border border-slate-200 shadow-sm aspect-[16/9]">
+          <Image
+            src="/city_graphics.jpg"
+            alt="Global demand, reliability gap, and the net-zero trajectory"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority={false}
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+
+      <Section>
+        <div className="grid md:grid-cols-3 gap-6">
+          {cards.map(([t, b]) => (
+            <div key={t} className="card p-6 flex flex-col">
+              <h3 className="font-semibold text-slate-900 mb-2">{t}</h3>
+              <p className="text-slate-700 flex-1">{b}</p>
+              <div className="mt-4">
+                <Link className="text-kadmos-blue" href="/contact">Request the technical brief →</Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+    </div>
+  );
+}
