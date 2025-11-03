@@ -24,38 +24,45 @@ export default function Page() {
   return (
     <div>
 
-    {/* HERO: simple background image, no transforms or cropping */}
-    <section className="relative isolate overflow-hidden border-b border-slate-200">
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/future_kadmos_look.png"
-          alt="Kadmos vision"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        {/* Subtle wash for readability; doesn't block taps */}
-        <div className="absolute inset-0 bg-white/80 pointer-events-none" />
-      </div>
-
-      <div className="container-xl py-20 sm:py-28 text-center">
-        <Image src="/logo.png" alt="Kadmos Energy" width={180} height={180} priority className="mx-auto" />
-        <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-slate-900 leading-tight">
-          Built on Proven Engineering, Designed for Passive Safety &amp; Scalable for the Future
-        </h1>
-        <p className="mt-4 text-slate-700 text-lg max-w-3xl mx-auto">
-          Kadmos Energy designs and engineers scalable nuclear reactors that rely on passive safety,
-          natural circulation, and proven components. Our “Home Depot” approach minimizes bespoke R&amp;D
-          and licensing risk by integrating off-the-shelf technologies into an integral, simplified plant—
-          optimized for high availability and rapid deployment.
-        </p>
-        <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-          <Link href="/contact" className="px-5 py-3 rounded-xl bg-kadmos-blue text-white hover:opacity-90">Talk to engineering</Link>
-          <Link href="/technology" className="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white">How it works</Link>
+      {/* NOTICE BANNER */}
+      <div className="bg-amber-50 border-b border-amber-200">
+        <div className="container-xl py-2 text-center text-amber-900 text-sm">
+          <span className="font-medium">Thanks for visiting.</span> This website is under construction.
         </div>
       </div>
-    </section>
+
+      {/* HERO: simple background image, no transforms or cropping */}
+      <section className="relative isolate overflow-hidden border-b border-slate-200">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/future_kadmos_look.png"
+            alt="Kadmos vision"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          {/* Subtle wash for readability; doesn't block taps */}
+          <div className="absolute inset-0 bg-white/80 pointer-events-none" />
+        </div>
+
+        <div className="container-xl py-20 sm:py-28 text-center">
+          <Image src="/logo.png" alt="Kadmos Energy" width={180} height={180} priority className="mx-auto" />
+          <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-slate-900 leading-tight">
+            Built on Proven Engineering, Designed for Passive Safety &amp; Scalable for the Future
+          </h1>
+          <p className="mt-4 text-slate-700 text-lg max-w-3xl mx-auto">
+            Kadmos Energy designs and engineers scalable nuclear reactors that rely on passive safety,
+            natural circulation, and proven components. Our “Home Depot” approach minimizes bespoke R&amp;D
+            and licensing risk by integrating off-the-shelf technologies into an integral, simplified plant—
+            optimized for high availability and rapid deployment.
+          </p>
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/contact" className="px-5 py-3 rounded-xl bg-kadmos-blue text-white hover:opacity-90">Talk to engineering</Link>
+            <Link href="/technology" className="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white">How it works</Link>
+          </div>
+        </div>
+      </section>
 
       {/* WHY KADMOS — wider trilemma image on the left, no cropping or frame */}
       <Section eyebrow="Why Kadmos" title="Pragmatic answers to nuclear's hardest bottlenecks">
@@ -65,8 +72,8 @@ export default function Page() {
             <Image
               src="/nuclear_trilema.png"
               alt="Global demand, reliability gap, and the net-zero trajectory"
-              width={2200}           // large enough to render crisply
-              height={1240}          // any numbers that roughly match the image ratio are fine
+              width={2200}
+              height={1240}
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full h-auto rounded-2xl shadow-sm"
               loading="lazy"
